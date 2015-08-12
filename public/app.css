@@ -61,7 +61,7 @@
   padding-left: 1rem;
   padding-right: 1rem;
   width: 50%;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 .title-list > li::after {
   content: '';
