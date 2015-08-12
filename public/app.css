@@ -1,0 +1,78 @@
+/* ------------------------------------------------------*/
+/* ---------->>> everything gets imported! <<<-----------*/
+/* ------------------------------------------------------*/
+@import "http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css";
+.clearfix {
+  clear: both;
+  content: '';
+  display: table;
+}
+* {
+  background: transparent;
+  box-sizing: border-box;
+  line-height: 1.333rem;
+}
+.list-reset {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.column {
+  float: left;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.group {
+  margin-left: -1rem;
+  margin-right: -1rem;
+}
+.group::after {
+  clear: both;
+  content: '';
+  display: table;
+}
+.half {
+  width: 50%;
+}
+.title-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-left: -1rem;
+  margin-right: -1rem;
+}
+.title-list::after {
+  clear: both;
+  content: '';
+  display: table;
+}
+.title-list > li {
+  font-size: 1rem;
+  margin: 0;
+  padding: 0;
+  float: left;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  width: 50%;
+  margin-bottom: 1rem;
+}
+.title-list > li .preview {
+  border-bottom: 1px dashed #b32317;
+}
+.title-list h2,
+.title-list h2 > a {
+  color: #b32317;
+  text-decoration: none;
+  font-size: 1.25rem;
+}
+.title-list h2,
+.title-list .deadline,
+.title-list .created {
+  margin-bottom: 0.33rem;
+}
+.title-list .deadline {
+  font-weight: bold;
+}
+.title-list .created {
+  font-style: italic;
+}
