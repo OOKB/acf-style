@@ -53,6 +53,43 @@
   text-align: center;
 }
 
+.filter-list > .search {
+  float: none;
+  width: 100%;
+}
+
+.filter-list > .search {
+  form {
+    height: 3em;
+    .mb(.5rem);
+    label.control-label {
+      float: left;
+      width: 15%;
+      background: @acf-dark-gray;
+      border: 1px solid;
+      border-color: @acf-dark-gray;
+      height: 3em;
+      line-height: 3em;
+      border-top-left-radius: .25em;
+      border-bottom-left-radius: .25em;
+      border-right: none;
+      color: @acf-light-gray;
+    }
+    input.form-control {
+      height: 3em;
+      float: right;
+      width: 85%;
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
+      border-color: @acf-dark-gray;
+    }
+    &::after {
+      .clearfix;
+    }
+  }
+}
+
+
 .filter-list > li a {
   display: block;
   padding: 1em;

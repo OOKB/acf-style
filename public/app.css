@@ -65,6 +65,40 @@
   width: 25%;
   text-align: center;
 }
+.filter-list > .search {
+  float: none;
+  width: 100%;
+}
+.filter-list > .search form {
+  height: 3em;
+  margin-bottom: 0.5rem;
+}
+.filter-list > .search form label.control-label {
+  float: left;
+  width: 15%;
+  background: #333333;
+  border: 1px solid;
+  border-color: #333333;
+  height: 3em;
+  line-height: 3em;
+  border-top-left-radius: .25em;
+  border-bottom-left-radius: .25em;
+  border-right: none;
+  color: #e7e7e7;
+}
+.filter-list > .search form input.form-control {
+  height: 3em;
+  float: right;
+  width: 85%;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  border-color: #333333;
+}
+.filter-list > .search form::after {
+  clear: both;
+  content: '';
+  display: table;
+}
 .filter-list > li a {
   display: block;
   padding: 1em;
