@@ -116,6 +116,11 @@ ul.fb-events .event .info .location a:focus {
   padding-left: 1rem;
   padding-right: 1rem;
 }
+.column-right {
+  float: right;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
 .group {
   margin-left: -1rem;
   margin-right: -1rem;
@@ -218,12 +223,8 @@ ul.fb-events .event .info .location a:focus {
 .title-list > li {
   font-size: 1rem;
   margin: 0;
-  min-height: 250px;
   padding: 0;
   position: relative;
-  float: left;
-  padding-left: 1rem;
-  padding-right: 1rem;
   width: 50%;
   margin-bottom: 2rem;
 }
@@ -234,6 +235,16 @@ ul.fb-events .event .info .location a:focus {
   bottom: 0;
   left: 1rem;
   right: 1rem;
+}
+.title-list > li:nth-child(odd) {
+  float: left;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.title-list > li:nth-child(even) {
+  float: right;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 .title-list > .has-fee::before {
   content: '$';

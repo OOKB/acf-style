@@ -18,6 +18,12 @@
   padding-right: 1rem;
 }
 
+.column-right {
+  float: right;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
 .group {
   margin-left: -1rem;
   margin-right: -1rem;
@@ -91,7 +97,6 @@
   }
 }
 
-
 .filter-list > li a {
   display: block;
   padding: 1rem 0;
@@ -119,10 +124,8 @@
   > li {
     font-size: 1rem;
     margin: 0;
-    min-height: 250px;
     padding: 0;
     position: relative;
-    .column;
     .half;
     .mb(2rem);
 
@@ -135,6 +138,15 @@
       right: 1rem;
     }
   }
+
+  > li:nth-child(odd) {
+    .column
+  }
+
+  > li:nth-child(even) {
+    .column-right
+  }
+
 
   > .has-fee {
     &::before {
