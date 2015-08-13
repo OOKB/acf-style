@@ -1,0 +1,86 @@
+
+/** Facebook event iframe styling **/
+
+ul.fb-events {
+  background: rgba(0,0,0,.1);
+  list-style: none;
+  margin: 0;
+  padding: .01em;
+
+  ul {
+    list-style: none;
+    margin:0;
+    padding:0;
+  }
+
+  .event {
+    background: white;
+    border: 1px solid acf-med-gray;
+    font-size: .85em;
+    margin: 1.5em;
+    padding: 1.5em;
+    max-width: 100%;
+
+    &:hover,
+    &:focus {
+      border-color: @acf-red;
+      box-shadow: 0 0 .75em rgba(140,165,115,.5);
+    }
+
+    .info {
+      position: relative;
+
+      .name {
+        h3 {
+          font-size: 1.1111em;
+          margin: .33em 0;
+          line-height: 1.25;
+
+          a {
+            color: @acf-med-gray;
+            text-decoration: none;
+            line-height: 1.25;
+
+            &:hover,
+            &:focus {
+              border-bottom: 1px solid @acf-red;
+            }
+          }
+        }
+      }
+
+      .cover {
+        margin: -1.5em -1.5em 0;
+
+        img {
+          width: 100%;
+        }
+      }
+
+      .start,
+      .end,
+      .date,
+      .date-time {
+        color: @acf-med-gray;
+      }
+
+      .location {
+        color: @acf-med-gray;
+        font-size: .95em;
+        margin: 0 0 1em;
+
+        a {
+          color: @acf-med-gray;
+          border-bottom: 1px solid @acf-med-gray;
+          text-decoration: none;
+
+          &:hover,
+          &:focus {
+            color: @acf-dark-gray;
+            border-bottom: 1px solid @acf-red;
+          }
+        }
+      }
+    }
+  }
+}
