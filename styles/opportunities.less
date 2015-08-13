@@ -45,6 +45,8 @@
 /** filter controls/buttons **/
 .filter-list {
   margin: 2rem 0;
+  font-size: 1rem;
+  line-height: 1rem;
 }
 .filter-list > li {
   .column;
@@ -54,29 +56,29 @@
 }
 
 .filter-list > .search {
-  float: none;
-  width: 100%;
+  padding-right: 2rem;
+  width: 50%;
 }
 
 .filter-list > .search {
   form {
-    height: 3em;
-    .mb(.5rem);
+    height: 3rem;
+
     label.control-label {
       float: left;
       width: 15%;
       background: @acf-dark-gray;
       border: 1px solid;
       border-color: @acf-dark-gray;
-      height: 3em;
-      line-height: 3em;
-      border-top-left-radius: .25em;
-      border-bottom-left-radius: .25em;
+      height: 3rem;
+      line-height: 3rem;
+      border-top-left-radius: .25rem;
+      border-bottom-left-radius: .25rem;
       border-right: none;
       color: @acf-light-gray;
     }
     input.form-control {
-      height: 3em;
+      height: 3rem;
       float: right;
       width: 85%;
       border-top-left-radius: 0;
@@ -92,7 +94,7 @@
 
 .filter-list > li a {
   display: block;
-  padding: 1em;
+  padding: 1rem;
   border: 1px solid @acf-light-gray;
   color: @acf-dark-gray;
   text-decoration: none;
