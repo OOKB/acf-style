@@ -153,6 +153,9 @@
   line-height: 2rem;
   text-align: center;
 }
+.title-list > .has-fee h2 {
+  margin-right: 3rem;
+}
 .title-list h2,
 .title-list h2 > a {
   color: #b32317;
