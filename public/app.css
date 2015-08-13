@@ -132,6 +132,18 @@
   left: 1rem;
   right: 1rem;
 }
+.title-list > .has-fee::before {
+  content: '$';
+  background: green;
+  position: absolute;
+  top: 0;
+  right: 1rem;
+  width: 4rem;
+  height: 2rem;
+  color: white;
+  line-height: 2rem;
+  text-align: center;
+}
 .title-list h2,
 .title-list h2 > a {
   color: #b32317;
@@ -148,4 +160,5 @@
 }
 .title-list .created {
   font-style: italic;
+  color: #bbbbbb;
 }

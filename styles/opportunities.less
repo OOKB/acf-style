@@ -105,44 +105,61 @@
 }
 
 /** listing of opportunities **/
-.title-list > li {
-  font-size: 1rem;
-  margin: 0;
-  min-height: 250px;
-  padding: 0;
-  position: relative;
-  .column;
-  .half;
-  .mb(2rem);
+.title-list {
+  > li {
+    font-size: 1rem;
+    margin: 0;
+    min-height: 250px;
+    padding: 0;
+    position: relative;
+    .column;
+    .half;
+    .mb(2rem);
 
-  &::after {
-    content: '';
-    border-bottom: 1px dashed @acf-red;
-    position: absolute;
-    bottom: 0;
-    left: 1rem;
-    right: 1rem;
+    &::after {
+      content: '';
+      border-bottom: 1px dashed @acf-red;
+      position: absolute;
+      bottom: 0;
+      left: 1rem;
+      right: 1rem;
+    }
+  }
+
+  > .has-fee {
+    &::before {
+      content: '$';
+      background: green;
+      position: absolute;
+      top:0;
+      right:1rem;
+      width: 4rem;
+      height: 2rem;
+      color: white;
+      line-height: 2rem;
+      text-align: center;
+    }
+  }
+
+  h2,
+  h2 > a {
+    color: @acf-red;
+    text-decoration: none;
+    font-size: 1.25rem;
+  }
+
+  h2,
+  .deadline,
+  .created {
+    .mb(.33rem);
+  }
+
+  .deadline {
+    font-weight: bold;
+  }
+
+  .created {
+    font-style: italic;
+    color: @acf-med-gray;
   }
 }
-
-.title-list h2,
-.title-list h2 > a {
-  color: @acf-red;
-  text-decoration: none;
-  font-size: 1.25rem;
-}
-
-.title-list h2,
-.title-list .deadline,
-.title-list .created {
-  .mb(.33rem);
-}
-
-.title-list .deadline {
-  font-weight: bold;
-}
-
-.title-list .created {
-  font-style: italic;
-}
-
