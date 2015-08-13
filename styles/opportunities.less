@@ -36,11 +36,38 @@
 /** ============================== **/
 /** ============================== **/
 
+.filter-list,
 .title-list {
   .list-reset;
   .group;
 }
 
+/** filter controls/buttons **/
+.filter-list {
+  margin: 2rem 0;
+}
+.filter-list > li {
+  .column;
+  padding:0;
+  width: 25%;
+  text-align: center;
+}
+
+.filter-list > li a {
+  display: block;
+  padding: 1em;
+  border: 1px solid @acf-light-gray;
+  color: @acf-dark-gray;
+  text-decoration: none;
+
+  &:hover {
+    background: @acf-red;
+    color: white;
+    border-color: @acf-red;
+  }
+}
+
+/** listing of opportunities **/
 .title-list > li {
   font-size: 1rem;
   margin: 0;

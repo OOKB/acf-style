@@ -39,6 +39,7 @@
 /** opportunities listing specific **/
 /** ============================== **/
 /** ============================== **/
+.filter-list,
 .title-list {
   list-style: none;
   margin: 0;
@@ -46,11 +47,37 @@
   margin-left: -1rem;
   margin-right: -1rem;
 }
+.filter-list::after,
 .title-list::after {
   clear: both;
   content: '';
   display: table;
 }
+/** filter controls/buttons **/
+.filter-list {
+  margin: 2rem 0;
+}
+.filter-list > li {
+  float: left;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding: 0;
+  width: 25%;
+  text-align: center;
+}
+.filter-list > li a {
+  display: block;
+  padding: 1em;
+  border: 1px solid #e7e7e7;
+  color: #333333;
+  text-decoration: none;
+}
+.filter-list > li a:hover {
+  background: #b32317;
+  color: white;
+  border-color: #b32317;
+}
+/** listing of opportunities **/
 .title-list > li {
   font-size: 1rem;
   margin: 0;
